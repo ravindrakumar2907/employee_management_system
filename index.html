@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This is demo</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 0px solid black;
+        }
+
+        .name {
+            background-color: blue;
+        }
+
+        #bodyColor {
+            background-color: aliceblue;
+        }
+    </style>
+
+</head>
+
+<!-- 
+css: what are the different types of selector in css?
+1. tag -> html tags
+2. class -> .name
+3. id #id
+-->
+<!-- This is main body area-->
+
+<body width="100%" height="100%" class="name" id="bodyColor">
+
+    <table width="100%">
+        <!-- This header area-->
+        <tr width="100%" height="120" bgcolor="red">
+            <td width="20%"><img src="logo.png" width="100%" height="100%"></td>
+            <td width="70%" colspan="4"> <img src="banner.png" width="100%" height="100px"> </td>
+        </tr>
+
+        <!-- This menu area-->
+        <tr width="100%" height="50" bgcolor="green">
+            <td width="20%"> <a href="#">Home</a></td>
+            <td width="20%"> <a href="#">Register</a></td>
+            <td width="20%"><a href="#">Search</a></td>
+            <td width="20%"><a href="#">About US</a></td>
+            <td width="20%"><a href="#">Contact</a></td>
+        </tr>
+
+        <!-- This Body area-->
+        <tr width="100%" height="570" bgcolor="yellow">
+            <td bgcolor="teal">
+                <!-- List of Articles-->
+
+                <ul>
+                    <li>Seach Employee</li>
+                    <li>Update employee Details</li>
+                    <li> Show all employee</li>
+                    <li>delete employee</li>
+                    <li>Insert employee</li>
+                </ul>
+
+            </td>
+            <td colspan="4" bgcolor="yellow">data </td>
+
+        </tr>
+
+        <!-- This footer area-->
+        <tr width="100%" height="50" bgcolor="purple">
+            <td colspan="5">
+                <center>Copyright 1999-2022 by Refsnes Data. All Rights Reserved.</center>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
