@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<html>
+<style>
+</style>
+
+<script type="text/javascript">
+  // variables
+  var num1 = 2; //1001-> num1 =2
+  var num2 = 2;
+  var sum = num1 + num2;
+
+  ///document.write("Hello This is ravi ########" + sum);
+
+  ///Node js == engine crome
+
+  //window.document.write("Hello This is ravi ########" + sum);
+  //alert(sum);
+  console.log("hello");
+
+  function amit() {
+    var num1 = 2; //1001-> num1 =2
+    var num2 = 2;
+    var sum = num1 + num2;
+    document.write("</br>sum ########" + sum);
+  }
+  //function calling
+  //amit();
+
+  // functions
+  function addNumber() {
+    alert("In the addNumber");
+    // This one way of reading values
+    //var number1 = parseInt(document.getElementsByTagName("input")[0].value);
+    //var number2 = parseInt(document.getElementsByTagName("input")[1].value);
+    //var sum = number1 + number2;
+
+
+
+    var num1 = 0;
+    var num2 = 0;
+    num1 = window.document.getElementById('number1').value;
+    num2 = window.document.getElementById('number2').value;
+
+    //num1 = document.getElementsByName('num1').value;
+    //window.document.write("</br> num1: " + num1);
+    ///num2 = document.getElementsByName('num2').value;
+    //window.document.write("</br> num2: " + num2);
+
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+    //window.document.write("num1: " + num1);
+    // window.document.write("</br> num2: " + num2);
+    var sum = num1 + num2;
+    // - sub, * mul, / divide
+    // window.document.write("</br> sum: " + sum);
+    alert("The sum is:" + sum);
+    window.document.getElementById('number1').value = 10;
+    window.document.getElementById('number2').value = 0;
+    window.document.getElementById('spa1').innerHTML = "ravi";
+  }
+  // function calling
+
+
+  /*
+  function test(t) {
+  if (t === undefined) {
+  document.write("undefined" + name);
+  return 'Undefined value!';
+  }
+  document.write("string not is undefined" + name);
+  return t;
+  }
+  */
+
+
+  //console.log(window);
+  //console.log(this);
+
+  /*
+  if (this === window) {
+  console.log("This is widnosw ");
+  } else {
+  console.log("This is not widnosw ");
+  }*/
+
+
+  // window and this
+  //window.document.write("");
+  //this
+
+
+  //var a = "Hello";
+  // console.log(typeof a);// String
+  // a = 5;
+  // console.log(typeof a); // int
+  //a = false;
+  //console.log(typeof a);// false
+  //a = undefined;
+  // console.log(typeof a);///undefined
+  //a = null;
+  //console.log(typeof a);// object
+
+
+
+
+
+  // console.log(b);//can't access lexical declaration 'b' before initialization
+  //let b = 5;
+  // console.log(b);
+
+
+  //var x;
+  //console.log("value of x " + x);//value of x undefined index.html:22:11
+
+  // x = 10;
+  //console.log("value of x " + x);//value of x 10 index.html:25:11
+
+  //let b;
+  // console.log("value of b " + b); //value of b undefined index.html:28:11
+  // b = 20;
+  //console.log("value of b " + b);//value of b 20
+
+  // const a = 10;
+  //console.log("value of b " + a);// Uncaught SyntaxError: missing = in const declaration
+
+
+  //console.log("value of c " + c);
+
+  /*
+
+  // varibale decalation and intilisation
+  var name; //undefined // ""
+  console.log(name);
+  document.write(name);
+
+  if (name === undefined) {
+  document.write("string is undefined");
+  }
+  if (name === "") {
+  document.write("string is mepty");
+  } else {
+  document.write("string not is mepty" + name);
+  }
+
+  */
+
+  //document.write("name :" + name + "<br>");
+  // document.write("Name :" + Name);
+
+  //alert(name);
+  //console.log(name)
+
+  function show(param1) {// parameter
+    var lastName = "More";
+    console.log("</br>I am showing js tutorial.");
+    console.log("</br>inside I am " + name);
+    console.log("</br>inside my last name " + lastName);
+  }
+
+  //show("ravi");// argument
+  //console.log("</br>outside " + lastName);// Uncaught ReferenceError: lastName is not defined
+
+  // single comment
+  /* multiline comments */
+
+
+</script>
+
+<body>
+
+  <center>SUM</br></br>
+    <span id="spa1"></span>
+    Number1: <input type="text" name="num1" id="number1" value=""></input></br></br>
+    Number2 <input type="text" name="num2" id="number2" value=""></input></br></br>
+    <input type="button" value="Sum" onclick="addNumber();">
+  </center>
+
+</body>
+
+</html>
